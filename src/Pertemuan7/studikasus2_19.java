@@ -9,7 +9,7 @@ public class studikasus2_19 {
         System.out.print("Nama mahasiswa : ");
         String nama = yusril.nextLine();
 
-        System.out.print("BELMAWA/BAKORMA/Mandiri : ");
+        System.out.print("BELMAWA/BAKORMA/Mandiri/PKM/Lainnya : ");
         String jenis = yusril.nextLine();
 
         String status;
@@ -33,10 +33,35 @@ public class studikasus2_19 {
             } else {
                 status = "Bukan juara 1,2,3. Dana penghargaan tidak diberikan";
             }
-            System.out.println("Status : " + status);
+       
+        }else if (jenis.equalsIgnoreCase ("PKM")) {
+
+            System.out.println("Jumlah dokumen : ");
+            int dokumen = yusril.nextInt();
+
+            System.out.println("Status pendanaan Pkm (1=lolos, 0=Tidak lolos) : ");
+            int pendanaan = yusril.nextInt();
+
+            if (pendanaan == 1 ) {
+                if (dokumen == 4) {
+                    status = "Dokumen lengkap dan PKM lolos pendanaan. Dana penghargaan diberikan.";
+                }else{
+                     int kurang = 4 - dokumen;
+                    status = "Dokumen tidak lengkap (kurang " + kurang
+                            + " dokumen). Dana penghargaan tidak diberikan.";
+                }
+                
+            }else{
+                status = "PKM tidak lolos pendanaan. Dana penghargaan tidak diberikan.";
+            }
+            
+        }else{
+            status = "Kegiatan termasuk kategori Lainnya. Dana penghargaan tidak diberikan.";
         }
 
-        
+        System.out.println("Status : " + status);
+
+        yusril.close();
     }   
     
 }
