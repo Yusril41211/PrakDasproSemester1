@@ -10,18 +10,19 @@ public class Triangle19 {
         System.out.print("Masukkan nilai n = "); 
         int n = yusril.nextInt();
 
-        int i = 1;
-
-        while (i <= n) { 
+        int i = n;
+                          
+        while (i >= 1) {
             int j = 0;
-            while (j < i) { 
-                System.out.print("*"); 
-                j++; 
-            } 
-            i++; 
+            while (j < i) {
+                System.out.print("*");
+                j++;
+            }
             System.out.println();
+            i--;
         }
-     yusril.close();
+ 
+        yusril.close();
  
     }
 }
