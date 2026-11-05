@@ -1,7 +1,7 @@
 package Pertemuan10;
 import java.util.Scanner;
 
-public class Tugas2_19 {
+public class tugas2_19 {
     public static void main(String[] args) {
         Scanner yusril = new Scanner(System.in);
         System.out.print("Masukkan nilai n = ");
