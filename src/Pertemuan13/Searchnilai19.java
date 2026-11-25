@@ -23,8 +23,9 @@ public class Searchnilai19 {
                 break;
             }
         }
-        if (!ditemukan) {
-            System.out.println("Nilai yang dicari tidak ditemukan.");
+if (!ditemukan) {
+    System.out.println("Nilai yang dicari tidak ditemukan: nilai " + key
+        + " tidak ada di dalam array yang berisi " + nilai.length + " data.");
         }
     }
 }
