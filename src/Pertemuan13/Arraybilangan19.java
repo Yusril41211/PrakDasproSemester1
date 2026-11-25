@@ -4,12 +4,8 @@ import java.util.Arrays;
 
 public class Arraybilangan19 {
     public static void main(String[] args) {
-        int bil[] = new int [4];
 
-        bil[0] = 19;
-        bil[1] = 27;
-        bil[2] = 4;
-        bil[3] = 24;
+        int[] bil = {5, 13, -7, 17};
 
     for (int i = 0; i < bil.length; i++) {
  System.out.println("bil[" + i + "] = " + bil[i]);
