@@ -12,13 +12,16 @@ public class Arraynilai19 {
     nilaiAkhir[i] = yusril.nextInt();
 
 }
-int no = 1;
-for (int nilai : nilaiAkhir) {
-    String status = (nilai > 70) ? "LULUS" : "TIDAK LULUS";
-    System.out.println("Mahasiswa ke-" + no + ": " + nilai + " (" + status + ")");
-    no++;
-
+int lulus = 0, tidakLulus = 0;
+for (int i = 0; i < nilaiAkhir.length; i++) {
+    String status;
+    if (nilaiAkhir[i] > 70) { status = "LULUS"; lulus++; }
+    else { status = "TIDAK LULUS"; tidakLulus++; }
+    System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
 }
+System.out.println(" ");
+System.out.println("Jumlah lulus: " + lulus);
+System.out.println("Jumlah tidak lulus: " + tidakLulus);
 }
     }
 
